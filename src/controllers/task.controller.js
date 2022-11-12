@@ -41,7 +41,7 @@ class TaskController {
             
             const {title, description, date, status} = req.body;
             title && ( task.title = title);
-            description && (task.description = description);
+            task.description = description;
             date && ( task.date = date);
             status && ( task.status = status);
             
